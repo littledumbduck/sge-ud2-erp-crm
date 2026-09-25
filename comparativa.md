@@ -122,3 +122,14 @@ El sector de los ERP y CRM abiertos utiliza frecuentemente el modelo de negocio 
   * Cliente: Navegador web actualizado (Google Chrome, Microsoft Edge, Mozilla Firefox) y conexión a internet de banda ancha.
 * **Fuente oficial y fecha de consulta:**
   * [Salesforce Sales Cloud Technical Overview & Help](https://developer.salesforce.com/docs) (Fecha de consulta: 24 de septiembre de 2026). Documentación bastante simple de recopilar ya que la web cuenta con una IA la cual resuelve todo tipo de dudas sobre el software.
+
+  ---
+  ---
+
+  ## 5. Fe de erratas
+
+  * **Errata 1**: En la diapositiva 3, en el título marca Software Libre vs Propietario. Sin embargo, luego en el cuerpo no habla sobre el software libre, sino el de código abierto.
+
+  * **Errata 2**: En la diapositiva 7, las capturas de pantalla de las interfaces de los programas mencionados no corresponden a los programas reales, sino a imágenes generadas por Inteligencia Artificial simulando las interfaces.
+
+  * **Errata 3**: En la diapositiva 9, dice que SuiteCRM fue desarrollado por la comunidad SugarCRM. Realmente fue desarrollado en 2013 por Sales Agility.
