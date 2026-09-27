@@ -54,6 +54,7 @@ El sector de los ERP y CRM abiertos utiliza frecuentemente el modelo de negocio 
 | **Mantenimiento y actualización**| Las migraciones de versión y parches corren a cargo de la empresa. | Herramientas automatizadas de migración y soporte asistido de versión por el proveedor. |
 
 ---
+---
 
 ## 3. Fichas técnicas
 
@@ -74,6 +75,7 @@ El sector de los ERP y CRM abiertos utiliza frecuentemente el modelo de negocio 
   * [Odoo GitHub Repository & Technical Documentation](https://github.com/odoo/odoo) (Fecha de consulta: 24 de septiembre de 2026).
 
 ---
+---
 
 ### 2. ERP Propietario: Microsoft Dynamics 365 (Business Central)
 
@@ -89,6 +91,7 @@ El sector de los ERP y CRM abiertos utiliza frecuentemente el modelo de negocio 
 * **Fuente oficial y fecha de consulta:**
   * [Microsoft Learn: Documentación de Dynamics 365 Business Central](https://learn.microsoft.com/es-es/dynamics365/business-central/) (Fecha de consulta: 24 de septiembre de 2026). ACLARACIÓN: este es el enlace oficial de la documentación de Microsoft Dynamics 365 Business Central. También encuentro el link de la versión general (https://learn.microsoft.com/es-es/dynamics365/) donde encuentro más información que he ido contrastando para poder encontrar toda la información relevante para poder rellenar el apartado. Para más info también consulto con webs externas ya que veo toda la información bastante ambigüa (https://www.davisa.es/business-central-espana-guia-2026/)
 
+---
 ---
 
 ### 3. CRM Libre: SuiteCRM
@@ -107,6 +110,7 @@ El sector de los ERP y CRM abiertos utiliza frecuentemente el modelo de negocio 
 * **Fuente oficial y fecha de consulta:**
   * [SuiteCRM Official Documentation & Release Notes](https://docs.suitecrm.com/) (Fecha de consulta: 24 de septiembre de 2026). 
 
+---
 ---
 
 ### 4. CRM Propietario: Salesforce Sales Cloud
@@ -134,6 +138,7 @@ El sector de los ERP y CRM abiertos utiliza frecuentemente el modelo de negocio 
 
   * **Errata 3**: En la diapositiva 9, dice que SuiteCRM fue desarrollado por la comunidad SugarCRM. Realmente fue desarrollado en 2013 por Sales Agility.
 
+  ---
   ---
 
   ## 6. Matriz de decisión y recomendación
