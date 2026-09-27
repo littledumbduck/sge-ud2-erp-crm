@@ -133,3 +133,63 @@ El sector de los ERP y CRM abiertos utiliza frecuentemente el modelo de negocio 
   * **Errata 2**: En la diapositiva 7, las capturas de pantalla de las interfaces de los programas mencionados no corresponden a los programas reales, sino a imágenes generadas por Inteligencia Artificial simulando las interfaces.
 
   * **Errata 3**: En la diapositiva 9, dice que SuiteCRM fue desarrollado por la comunidad SugarCRM. Realmente fue desarrollado en 2013 por Sales Agility.
+
+  ---
+
+  ## 6. Matriz de decisión y recomendación
+
+### Justificación de las puntuaciones (Escala 1 a 5)
+
+1. **Coste total de propiedad (TCO y licencias) [Peso: 20%]**
+   * *Odoo Community (4/5):* Sin coste recurrente de licencias por usuario. Requiere gasto en servidor propio/VPS y soporte técnico inicial.
+   * *SuiteCRM (4/5):* Gratuito a nivel de software, pero exige costes de administración de sistemas y servidor web PHP/MySQL.
+   * *Salesforce (1/5):* Coste prohibitivo para una pyme de 35 empleados (multiplicar 35 licencias mensuales genera un gasto anual desproporcionado).
+
+2. **Gestión de citas y calendario multi-sede [Peso: 20%]**
+   * *Odoo Community (4/5):* Dispone de un módulo de calendario colaborativo y citas online que permite sincronizar agendas por empleado y sede con facilidad.
+   * *SuiteCRM (3/5):* Incluye módulo de calendario y llamadas, pero la coordinación entre múltiples clínicas físicas requiere ajustes y no está tan orientada a turnos médicos.
+   * *Salesforce (5/5):* Capacidades líderes con flujos de asignación automática de turnos, salas y especialistas entre distintas ubicaciones geográficas.
+
+3. **Ficha de paciente / historial y trazabilidad [Peso: 20%]**
+   * *Odoo Community (3/5):* Su modelo de contactos es versátil y permite añadir campos personalizados para registrar mascotas y tratamientos, aunque requiere configuración previa para adaptarse al sector veterinario.
+   * *SuiteCRM (3/5):* Permite crear módulos personalizados con Studio para vincular dueños con mascotas, pero la experiencia visual de consulta del historial clínico es tosca.
+   * *Salesforce (5/5):* Excelente modelo de datos relacional y gestión documental para asociar consultas previas, analíticas, radiografías y prescripciones médicas.
+
+4. **Automatización de recordatorios y fidelización [Peso: 15%]**
+   * *Odoo Community (3/5):* Puede programar alertas y correos automáticos básicos (vacunaciones anuales, revisiones), aunque las campañas complejas por SMS o WhatsApp requieren módulos extra.
+   * *SuiteCRM (3/5):* Permite automatizaciones con flujos de trabajo (*Workflows*) y campañas de email, pero la integración multicanal es compleja.
+   * *Salesforce (5/5):* Automatización superior (*Flows* y *Marketing Cloud*) con recordatorios omnicanal por SMS, email y avisos automáticos ante próximas revisiones.
+
+5. **Facilidad de uso para personal veterinario [Peso: 15%]**
+   * *Odoo Community (4/5):* Interfaz moderna, limpia, intuitiva y basada en web, lo que reduce la curva de aprendizaje para veterinarios y auxiliares.
+   * *SuiteCRM (3/5):* Interfaz funcional pero algo anticuada y densa, orientada a comerciales más que a personal sanitario.
+   * *Salesforce (4/5):* Interfaz Lightning muy depurada y configurable, aunque su gran número de opciones puede abrumar a personal no administrativo.
+
+6. **Despliegue y mantenimiento técnico [Peso: 10%]**
+   * *Odoo Community (3/5):* Requiere mantener un servidor Linux (o contenedor Docker) con PostgreSQL, copias de seguridad diarias y control de parches.
+   * *SuiteCRM (2/5):* Mantenimiento manual exigente de dependencias PHP, permisos de carpetas y base de datos MySQL.
+   * *Salesforce (5/5):* Solución 100% SaaS administrada; no requiere gestionar servidores, parches ni copias de seguridad de infraestructura.
+
+---
+
+### Totales ponderados obtenidos
+
+$$\text{Puntuación} = \sum (\text{Nota} \times \text{Peso})$$
+
+* **Salesforce Sales Cloud:** 4.05 / 5.00
+* **Odoo Community:** 3.55 / 5.00
+* **SuiteCRM:** 3.10 / 5.00
+
+---
+
+### Recomendación final y análisis de riesgos
+
+Aunque Salesforce obtiene la puntuación técnica más alta en valor absoluto (4.05), **se descarta por su inviabilidad económica**: para una plantilla de 35 usuarios, el coste en suscripciones recurrentes asfixiaría el margen operativo de una clínica veterinaria mediana.
+
+Por tanto, **la solución recomendada para la clínica es Odoo Community (3.55)**, complementada con parametrización de campos para la ficha clínica veterinaria y el módulo de citas.
+
+#### Evaluación de riesgos de la implantación recomendada:
+* **Coste total (TCO):** El ahorro en licencias debe reinvertirse en contratar a un partner tecnológico para la implantación inicial, la configuración de los campos de mascotas y la contratación de un VPS seguro con copias de seguridad automatizadas fuera de sede.
+* **Dependencia del proveedor (*Vendor Lock-in*):** Al tratarse de software libre (LGPLv3) sobre PostgreSQL, el riesgo de bloqueo es nulo; la clínica mantiene la propiedad íntegra de sus datos y de la base de datos sin depender de un único fabricante.
+* **Soporte:** Al no contar con soporte oficial del fabricante en la edición Community, la empresa debe contratar una bolsa de horas con una consultora especializada local o disponer de un soporte informático externo con SLA de respuesta ante caídas del servidor.
+* **Migración futura:** Al utilizar PostgreSQL y una arquitectura de datos abierta, la extracción y migración de historiales clínicos hacia otras soluciones especializadas veterinarias en el futuro es completamente viable mediante exportaciones CSV o conexiones API REST estándar.
